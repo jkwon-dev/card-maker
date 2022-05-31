@@ -1,10 +1,9 @@
 import './App.css';
+import Login from './components/login/login';
 
-function App() {
+function App({authService}) {
   return (
-    <div className="App">
-     <h1>Hello React</h1>
-    </div>
+    <Login authService={authService}/>
   );
 }
 
